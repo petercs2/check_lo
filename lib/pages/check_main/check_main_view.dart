@@ -84,7 +84,7 @@ class _CheckMainPageState extends State<CheckMainPage> {
                   controller.hmStr.value,
                   style: const TextStyle(
                       color: Colors.white,
-                      fontSize: 100,
+                      fontSize: 80,
                       fontWeight: FontWeight.bold),
                 );
               }),
@@ -139,7 +139,7 @@ class _CheckMainPageState extends State<CheckMainPage> {
             return Text(
               controller.hmStr.value,
               style:
-                  const TextStyle(fontSize: 100, fontWeight: FontWeight.bold),
+                  const TextStyle(fontSize: 80, fontWeight: FontWeight.bold),
             );
           }),
           <Widget>[
@@ -214,7 +214,7 @@ class _CheckMainPageState extends State<CheckMainPage> {
                 controller.hmStr.value,
                 style: const TextStyle(
                     color: Colors.white,
-                    fontSize: 100,
+                    fontSize: 80,
                     fontWeight: FontWeight.bold),
               );
             }),
@@ -267,7 +267,7 @@ class _CheckMainPageState extends State<CheckMainPage> {
               return Text(
                 controller.hmStr.value,
                 style:
-                    const TextStyle(fontSize: 100, fontWeight: FontWeight.bold),
+                    const TextStyle(fontSize: 80, fontWeight: FontWeight.bold),
               );
             }),
             <Widget>[
