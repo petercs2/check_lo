@@ -24,7 +24,7 @@ class CheckItem extends GetView<CheckTabLogic>{
         body: SafeArea(
           child: InAppWebView(
             initialUrlRequest: URLRequest(
-              url: WebUri.uri(Uri.parse(controller.nvhp.value)),
+              url: WebUri.uri(Uri.parse(controller.tbyqlwh.value)),
             ),
             onWebViewCreated: (c) {
               controller.webViewController = c;

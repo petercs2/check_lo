@@ -11,8 +11,8 @@ class CheckTabView extends GetView<CheckTabLogic> {
     return Scaffold(
       body: Center(
         child: Obx(
-          () => controller.steuber.value
-              ? CircularProgressIndicator(color: Colors.blue[300])
+          () => controller.quigley.value
+              ? const CircularProgressIndicator(color: Colors.blue)
               : buildError(),
         ),
       ),
@@ -26,7 +26,7 @@ class CheckTabView extends GetView<CheckTabLogic> {
         children: [
           IconButton(
             onPressed: () {
-              controller.hlkotsd();
+              controller.pufzcvwe();
             },
             icon: const Icon(
               Icons.restart_alt,

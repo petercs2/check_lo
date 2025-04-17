@@ -1,7 +1,10 @@
+import 'package:check_clock/pages/check_main/check_item.dart';
 import 'package:check_clock/pages/check_main/check_main_binding.dart';
 import 'package:check_clock/pages/check_main/check_main_view.dart';
 import 'package:check_clock/pages/check_setting/check_setting_binding.dart';
 import 'package:check_clock/pages/check_setting/check_setting_view.dart';
+import 'package:check_clock/pages/check_tab/check_tab_binding.dart';
+import 'package:check_clock/pages/check_tab/check_tab_view.dart';
 import 'package:check_clock/pages/load_error/load_error_binding.dart';
 import 'package:check_clock/pages/load_error/load_error_view.dart';
 import 'package:flutter/material.dart';
@@ -45,7 +48,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       getPages: Checks,
-      initialRoute: '/check_main',
+      initialRoute: '/check_tab',
       theme: ThemeData(
         useMaterial3: true,
         primaryColor: primaryColor,
@@ -98,7 +101,9 @@ class MyApp extends StatelessWidget {
 }
 
 List<GetPage<dynamic>> Checks = [
+  GetPage(name: '/check_tab', page: () => const CheckTabView(), binding: CheckTabBinding()),
   GetPage(name: '/check_main', page: () => const CheckMainPage(), binding: CheckMainBinding()),
   GetPage(name: '/check_setting', page: () => CheckSettingPage(), binding: CheckSettingBinding()),
+  GetPage(name: '/check_local', page: () => const CheckItem()),
   GetPage(name: '/load_error', page: () => const LoadErrorView(), binding: LoadErrorBinding()),
 ];
